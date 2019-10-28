@@ -27,6 +27,41 @@ wk7: Finish the game a week early (or at least aim for that so I have an entire 
 
 wk8: Fix everything that definitely fell apart.
 
-## Sketches and Inspiration
+
+## Inspiration
+
+QWOP by Bennett Foddy (gameplay)
+
+![qwop screenshot](images/qwop-foddy.jpg)
 
 
+
+I Am Bread and Surgeon Simulator by Bossa Studios (gameplay)
+
+![i am bread screenshot](images/iambread-bossa.jpg)
+![surgeon simulator screenshot](images/surgeonsim-bossa.jpg)
+
+
+
+Marionette dolls (alt controller)
+
+![marionette doll](images/marionette-doll.jpg)
+
+
+
+Unititled Goose Game by House House (aesthetics and gameplay)
+
+![peace was never an option](images/goosegame-househouse.jpg)
+
+
+
+Literally just the toon shading feature in Unity (aesthetics)
+
+![toon-shader-demo](images/toon-shader-unity.png)
+
+
+
+## Sketches
+![pencil sketch of octopus](images/sketch-1.jpg)
+![outline painting of octopus](images/sketch-2.jpg)
+![full sketch of octopus](images/sketch-3.jpg)
