@@ -62,6 +62,6 @@ Literally just the toon shading feature in Unity (aesthetics)
 
 
 ## Sketches
-![pencil sketch of octopus](images/sketch-1.jpg)
+![pencil sketch of octopus](images/sketch-1.JPG)
 ![outline painting of octopus](images/sketch-2.jpg)
-![full sketch of octopus](images/sketch-3.jpg)
+![full sketch of octopus](images/sketch-3.JPG)
