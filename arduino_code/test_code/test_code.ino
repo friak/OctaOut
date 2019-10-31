@@ -50,7 +50,7 @@ void loop() {
   {
     digitalWrite(ledPin, LOW);
   }
-  if (bendval >= 1000)
+  if (bendval >= 980)
   {
     Serial.write(1); 
     Serial.flush();
@@ -63,5 +63,5 @@ void loop() {
     delay(20);
   }
     
-     // Serial.println(bendval);
+   //   Serial.println(bendval);
 }

@@ -6,18 +6,14 @@ using System.IO.Ports;
 public class test : MonoBehaviour
 {
 
-    private bool jsUp = false;
-    private bool jsDown = false;
+   // private bool jsUp = false;
+   // private bool jsDown = false;
+   // idk debugging for later
 
-    //frame states
-    private string frameState = "nobend"; //player is idle
-    private float timeOut = 0f; //time within each state
 
-    //...sprites
-    public Sprite nobend;
-    public Sprite bend;
-
-    private SpriteRenderer spriteRenderer;
+    //positioning for tentacle tip
+    private float pos = 0f;
+    public GameObject tentacle;
 
 
     //Serial Communication
@@ -36,15 +32,11 @@ public class test : MonoBehaviour
         {
             Debug.Log("Controller Not Found!");
         }
-
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer.sprite == null) // if the sprite on spriteRenderer is null then
-            spriteRenderer.sprite = nobend;
+        
     }
 
     void Update()
     {
-
         //SERIAL
         if (sp.IsOpen)
         {
@@ -58,26 +50,25 @@ public class test : MonoBehaviour
             }
         }
 
-
-
     }
 
 
 
-
-    //DEBUG
+    //DATA FROM ARDUINO CODE
     void MoveObject(int data)
     {
 
-        if (data == 1) //up
+        if (data == 1)
         {
             Debug.Log("bend");
-            spriteRenderer.sprite = bend;
+            pos -= 2f;
+            transform.localRotation = Quaternion.Euler(0, 0, pos);
         }
         else if (data == 2)
         {
+            pos = 0f;
             Debug.Log("nope");
-            spriteRenderer.sprite = nobend;
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
 
     }
