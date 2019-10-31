@@ -1,4 +1,4 @@
-#Process Update no.1
+# Process Update no.1
 
 ## Super tentative timeline
 
@@ -64,7 +64,7 @@ Literally just the toon shading feature in Unity (aesthetics)
 
 Today, I did some Arduino tests to test bend sensor values being serially sent to unity, and it worked!
 
-![arduino bend sensor setup](images/arduino_test.png)
+![arduino bend sensor setup](images/arduino_test.jpg)
 
 [![Initial Demo](https://i.ibb.co/RNXcKK5/https-i-vimeocdn-com-video-827362140-720.jpg)](https://vimeo.com/370203231 "Initial Demo")
 
