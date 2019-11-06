@@ -62,10 +62,34 @@ Literally just the toon shading feature in Unity (aesthetics)
 
 # Process Update no. 2
 
+oct 30th
+
 Today, I did some Arduino tests to test bend sensor values being serially sent to unity, and it worked!
 
 ![arduino bend sensor setup](images/arduino_test.jpg)
 
 [![Initial Demo](https://i.ibb.co/RNXcKK5/https-i-vimeocdn-com-video-827362140-720.jpg)](https://vimeo.com/370203231 "Initial Demo")
 
+
+# Process Update no. 3
+
+nov 6
+
+![full sketch of octopus](images/sketch-3.JPG)
+
+## Tako the Octo: 
+
+The physical features of Tako are:
+1- Hot Pink/Magenta
+2- Big yellow eyes
+3- Squishy
+4- Not super long nor super short limbs
+5- Flexible limbs
+
+Character traits:
+Cowardly- He's a scared little octopus escaping the restaurant for his life! Very pure and anxiety ridden, making the development of this character fufilling because he has to be brave in order to escape.
+
+Cautious- He has to sneak and not make a mistake, so he's a very cautious little octopus. 
+
+Tako (japanese for octopus) is a wholesome little octopus; he's shy and still very young and naive to the world. One day, he got lost from his family and came across a friendly seeming diver. Innocently, Tako swam over to say hi and ask for directions back home. The diver however was not looking to be a good samaritan and forcibly grabbed Tako and didn't let go. So shocked and scared, Tako fainted, and he was taken away to be made into sushi at a small restaurant in the California bay area. He awakes in a fish tank at the restaurant and realizes where he is. Panicked, he looks around and sees out the window of the restaurant the ocean shore--home! Tako is so frightened after waking in this nightmare situation, and he's always been a bit cowardly. But, if he doesn't want to be made into food, he has to get brave and escape! Now he's more cautious than ever though after trusting the human and being snatched up as a result, and he feels like the safest course of action is to sneak and be undetected. Will Tako make it back home? Or will he be made into a side sashimi for a Silicon Valley business man?? Find out ~~next time on Dragon Ball Z~~ by playing my game.
 
