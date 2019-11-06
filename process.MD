@@ -97,7 +97,7 @@ Character traits:
 Cowardly- He's a scared little octopus escaping the restaurant for his life! Very pure and anxiety ridden, making the development of this character fufilling because he has to be brave in order to escape.
 
 
-Cautious- He has to sneak and not make a mistake, so he's a very cautious little octopus. 
+Cautious- He does not trust humans and is in-turn very sneaky and cautious as to not be detected by them.
 
 
 Tako's Story:
