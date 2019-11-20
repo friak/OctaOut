@@ -7,7 +7,9 @@ The player is a cute octopus that is trying to escape a sushi restaurant and avo
 
 ## Design goals
 Alternative Controller
+
 Stealth
+
 Funny physics that isn't too difficult
 
 
