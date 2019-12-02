@@ -119,3 +119,28 @@ Tako's Story:
 
 Tako (japanese for octopus) is a wholesome little octopus; he's shy and still very young and naive to the world. One day, he got lost from his family and came across a friendly seeming diver. Innocently, Tako swam over to say hi and ask for directions back home. The diver however was not looking to be a good samaritan and forcibly grabbed Tako and didn't let go. So shocked and scared, Tako fainted, and he was taken away to be made into sushi at a small restaurant in the California bay area. He awakes in a fish tank at the restaurant and realizes where he is. Panicked, he looks around and sees out the window of the restaurant the ocean shore--home! Tako is so frightened after waking in this nightmare situation, and he's always been a bit cowardly. But, if he doesn't want to be made into food, he has to get brave and escape! Now he's more cautious than ever though after trusting the human and being snatched up as a result, and he feels like the safest course of action is to sneak and be undetected. Will Tako make it back home? Or will he be made into a side sashimi for a Silicon Valley business man?? Find out ~~next time on Dragon Ball Z~~ by playing my game.
 
+# Process Update no. 4
+
+Due to time constraints, I tweaked the game values to now include:
+
+## Design goals
+Alternative Controller
+
+~~Stealth~~
+
+Funny physics that isn't too difficult
+
+*Timed;Urgent*
+
+*Stealth with Momentum*
+
+I want the first (and only level for this class) to have a timed element so that the player must balance between stealth and clearing the level in a timely manner to play with momentum and make a rather simplistic/short level feel a bit more substantial.
+
+
+I also was gettitng a lot of work done with the 3D octopus and rigging it, and then I lost my model. PCs are fun.
+
+
+But I'm getting back into it, maybe creating an even better octopus model, and I will continue to work on physics and movement.
+
+
+
