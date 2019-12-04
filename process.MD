@@ -159,10 +159,15 @@ There's something about Japanese jazz bossa novas that bring out the idea of nos
 *Diogetic Sounds*
 
 Enemy sound (2:30-2:49) - Mista Swing club mix by Jazztronik
+
 Tako's swuishy body - Blooper sounds effects from Super Mario Sunshine
+
 Tako stressed when hiding and enemy is close - "game27" from Katamari Damacy REROLL
+
 Other environmental sounds - augmented samples from Katamari Damacy REROLL
-game over state/restart level state - Alarmed noise from Metal Gear Solid
+
+Game over state/restart level state - Alarmed noise from Metal Gear Solid
+
 
 For the enemy (the sushi chef whose gaze you're avoiding), I wanted to attach audio to him to where if he's off-screen, the player can know if he's coming and how close he is. I also want the audio to be ominoius to set the tone of oncoming danger but still fit into the atmosphere, so I'm using the bridge from "Mista Swing" (background track) to achieve that with a different but still congruent sound. I also want the background music and enemy audio to both play when the game level scene opens so that they'll always be on tempo with each other and melt together. I want Tako to sound squishy when coming into contact with things around them, and I believe the blooper squids from Mario (specifically sunshine) captures that well. I'll also be taking samples sounds from Katamari (like "game27") because I enjoy the simple yet layered mixing of a lot of them, and they fir the theme of Tako and the game aesthetics. Lastly, I want the "!" alarmed noise from MGS play when Tako is caught by the chef, so that it's fittingly alarming, but with the context of nostalgia, still light-hearted.
 
