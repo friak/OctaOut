@@ -146,27 +146,34 @@ But I'm getting back into it, maybe creating an even better octopus model, and I
 
 # Process Update no. 5 (sound!)
 
-*Non-Diogetic Sounds*
 
-Background music (specifically from 0:00-2:34) - Mista Swing club mix by Jazztronik https://www.youtube.com/watch?v=vuv3baPlsEE
+### Splash Screens and/or Cinematics
 
+Menu Music -(0:00-0:32) Mista Swing club mix by Jazztronik https://www.youtube.com/watch?v=vuv3baPlsEE
+
+Menu Select sound - "etc06" from Katamari Damacy REROLL
+
+Game Scene/Soundtrack  (0:32-2:30) Mista Swing club mix by Jazztronik 
+AND
 Samples from Tsurugi no Mai by Nujabes - https://www.youtube.com/watch?v=Ol3iWiBDVLE
 
+Game over state/restart level state - "Alert!" from Metal Gear Solid
+
+Additional sound effects- augmented samples from Katamari Damacy REROLL
 
 
-There's something about Japanese jazz bossa novas that bring out the idea of nostalgic Eastern silliness and pure gaming fun (at least to me) that fits well with the character of Tako and his situation. The clean, on-beat swing also evokes the sense of the momentum and urgency I want to have felt in the game as well. I want to sample from the song Tsurugi no Mai because it has a lot of iconagraphic audio that gives a "kitchen" and "restaurant" feel, helping allude to how the game level is set in a sushi restaurant, behind the sushi bar specifically.
+### Player Sounds
 
 *Diogetic Sounds*
 
 Enemy sound (2:30-2:49) - Mista Swing club mix by Jazztronik
 
-Tako's swuishy body - Blooper sounds effects from Super Mario Sunshine
+Tako's sound- Blooper sounds effects from Super Mario Sunshine
 
 Tako stressed when hiding and enemy is close - "game27" from Katamari Damacy REROLL
 
-Other environmental sounds - augmented samples from Katamari Damacy REROLL
 
-Game over state/restart level state - Alarmed noise from Metal Gear Solid
+There's something about Japanese jazz bossa novas that bring out the idea of nostalgic Eastern silliness and pure gaming fun (at least to me) that fits well with the character of Tako and his situation. The clean, on-beat swing also evokes the sense of the momentum and urgency I want to have felt in the game as well. I want to sample from the song Tsurugi no Mai because it has a lot of iconagraphic audio that gives a "kitchen" and "restaurant" feel, helping allude to how the game level is set in a sushi restaurant, behind the sushi bar specifically.
 
 
 For the enemy (the sushi chef whose gaze you're avoiding), I wanted to attach audio to him to where if he's off-screen, the player can know if he's coming and how close he is. I also want the audio to be ominoius to set the tone of oncoming danger but still fit into the atmosphere, so I'm using the bridge from "Mista Swing" (background track) to achieve that with a different but still congruent sound. I also want the background music and enemy audio to both play when the game level scene opens so that they'll always be on tempo with each other and melt together. I want Tako to sound squishy when coming into contact with things around them, and I believe the blooper squids from Mario (specifically sunshine) captures that well. I'll also be taking samples sounds from Katamari (like "game27") because I enjoy the simple yet layered mixing of a lot of them, and they fir the theme of Tako and the game aesthetics. Lastly, I want the "!" alarmed noise from MGS play when Tako is caught by the chef, so that it's fittingly alarming, but with the context of nostalgia, still light-hearted.
