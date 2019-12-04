@@ -173,6 +173,8 @@ Tako's sound- Blooper sounds effects from Super Mario Sunshine
 Tako stressed when hiding and enemy is close - "game27" from Katamari Damacy REROLL
 
 
+### Reasonings
+
 There's something about Japanese jazz bossa novas that bring out the idea of nostalgic Eastern silliness and pure gaming fun (at least to me) that fits well with the character of Tako and his situation. The clean, on-beat swing also evokes the sense of the momentum and urgency I want to have felt in the game as well. I want to sample from the song Tsurugi no Mai because it has a lot of iconagraphic audio that gives a "kitchen" and "restaurant" feel, helping allude to how the game level is set in a sushi restaurant, behind the sushi bar specifically.
 
 
