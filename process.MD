@@ -144,3 +144,19 @@ But I'm getting back into it, maybe creating an even better octopus model, and I
 
 
 
+# Process Update no. 5 (sound!)
+
+*Non-Diogetic Sounds*
+
+Background music (specifically from 0:00-2:30) - Mista Swing club mix by Jazztronik https://www.youtube.com/watch?v=vuv3baPlsEE
+Samples from Tsurugi no Mai by Nujabes - https://www.youtube.com/watch?v=Ol3iWiBDVLE
+
+
+
+There's something about Japanese jazz bossa novas that bring out the idea of nostalgic Eastern silliness and pure gaming fun (at least to me) that fits well with the character of Tako. The clean, on-beat swing also evokes the sense of the momentum I want to have felt in the game as well. I want to sample from Tsurugi no Mai because it has a lot of iconagraphic audio that gives a "kitchen" and "restaurant" feel, helping allude to how the game level is set in a sushi restaurant behind the sushi bar specifically.
+
+*Diogetic Sounds*
+
+
+
+
