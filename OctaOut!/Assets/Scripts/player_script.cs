@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.IO;
-using System.IO.Ports;
 using UnityEngine.SceneManagement;
 
 public class player_script : MonoBehaviour
@@ -21,17 +19,13 @@ public class player_script : MonoBehaviour
     public string frameState = "in water";
 
     public GameObject tako;
-    public GameObject winSound;
+    public GameObject splash;
+    public GameObject split;
 
 
     private BoxCollider2D boxCollider;
     private Rigidbody2D rb2d;
     private SpriteRenderer spriteRenderer;
-
-
-
-    //Serial Communication
-    SerialPort sp = new SerialPort("COM4", 9600);
 
 
 
@@ -44,17 +38,6 @@ public class player_script : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // sp.Open() will throw an error if it can't find an arduino and this "try" block will catch that error and allow the game to keep running
-        try
-        {
-            sp.Open();
-            sp.ReadTimeout = 25;
-        }
-        catch (System.Exception)
-        {
-            Debug.Log("Controller Not Found!");
-        }
-
     }
 
 
@@ -62,28 +45,15 @@ public class player_script : MonoBehaviour
 
     void Update()
     {
-        //SERIAL
-        if (sp.IsOpen)
-        {
-            try
-            {
-                // MoveObject(sp.ReadByte());
-                //print(sp.ReadByte());
-            }
-            catch (System.Exception)
-            {
-
-            }
-        }
 
         //MOVEMENT FOR DEBUGGING
-      //  float xAxis = Input.GetAxis("Horizontal");
-       // float yAxis = Input.GetAxis("Vertical");
+    //    float xAxis = Input.GetAxis("Horizontal");
+    //    float yAxis = Input.GetAxis("Vertical");
        //  Change position based on input
         Vector3 pos = transform.position;
-       // pos.x += xAxis * speed1 * Time.deltaTime;
-       // pos.y += yAxis * speed1 * Time.deltaTime;
-       // transform.position = pos;
+    //    pos.x += xAxis * speed1 * Time.deltaTime;
+    //    pos.y += yAxis * speed1 * Time.deltaTime;
+    //    transform.position = pos;
 
 
 
@@ -95,7 +65,7 @@ public class player_script : MonoBehaviour
 
         if (frameState == "out water")
         {
-            tako.GetComponent<Rigidbody2D>().gravityScale = 2f;
+            tako.GetComponent<Rigidbody2D>().gravityScale = 2.5f;
         }
 
     }
@@ -116,14 +86,14 @@ public class player_script : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         GameObject otherGO = other.gameObject;
-        Debug.Log(otherGO.tag);
+   //     Debug.Log(otherGO.tag);
         if (otherGO.tag == "water")
         {
             frameState = "in water";
         }
         if (otherGO.tag == "prop")
         {
-            Debug.Log("hidden");
+     //       Debug.Log("hidden");
             hiding = true;
             Physics2D.IgnoreLayerCollision(8, 9, true);
         }
@@ -138,11 +108,15 @@ public class player_script : MonoBehaviour
     GameObject otherGO = other.gameObject;
         if(otherGO.tag == "water")
         {
+            Instantiate(splash);
+            Destroy(splash);
+            Instantiate(split);
+            Destroy(split);
             frameState = "out water";
         }
     if (otherGO.tag == "prop")
     {
-        Debug.Log("open");
+    //    Debug.Log("open");
         hiding = false;
         Physics2D.IgnoreLayerCollision(8, 9, false);
     }

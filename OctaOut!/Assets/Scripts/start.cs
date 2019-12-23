@@ -12,6 +12,9 @@ public class start : MonoBehaviour
     private string frameState = "start"; //player is idle
     public float timeOut = 0f; //time within each state
 
+    public GameObject splash;
+
+
     //...sprites
     public Sprite startscreen;
     public Sprite tutorial1;
@@ -67,6 +70,7 @@ public class start : MonoBehaviour
 
         if (frameState == "start")
         {
+
             spriteRenderer.sprite = startscreen;
             timeOut -= Time.deltaTime;
 
@@ -119,29 +123,39 @@ public class start : MonoBehaviour
 
 
         //DEBUG KEYBOARD CONTROLS
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "start")
+        if (Input.GetKey(KeyCode.A) && frameState == "start")
         {
+            Instantiate(splash);
+            Destroy(splash);
             frameState = "tutorial1";
             timeOut = 1f;
 
         }
          if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial1" && timeOut <= 0)
         {
+            Instantiate(splash);
+            Destroy(splash);
             frameState = "tutorial2";
             timeOut = 1f;
         }
          if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial2" && timeOut <= 0)
         {
+            Instantiate(splash);
+            Destroy(splash);
             frameState = "tutorial3";
             timeOut = 1f;
         }
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial3" && timeOut <= 0)
         {
+            Instantiate(splash);
+            Destroy(splash);
             frameState = "tutorial4";
             timeOut = 1f;
         }
         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial4" && timeOut <=0)
         {
+            Instantiate(splash);
+            Destroy(splash);
             frameState = "done";
             timeOut = 1f;
         }

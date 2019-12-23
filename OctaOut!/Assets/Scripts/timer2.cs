@@ -8,17 +8,19 @@ public class timer2 : MonoBehaviour
 {
     private Text timerText;
     private float levelTime;
+    private GameObject music;
 
     // Start is called before the first frame update
     void Start()
     {
         timerText = GetComponent<Text>();
         ResetTimer();
+        music = GameObject.Find("Music");
     }
 
     public void ResetTimer()
     {
-        levelTime = 10f;
+        levelTime = 5f;
     }
 
     // Update is called once per frame
@@ -31,8 +33,8 @@ public class timer2 : MonoBehaviour
         }
         else
         {
-
-            SceneManager.LoadScene("Start_Scene");
+            Destroy(music);
+                SceneManager.LoadScene("Start_Scene");
         }
     }
 }

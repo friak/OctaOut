@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5355294820159632605}
   - component: {fileID: 2853474959152790507}
+  - component: {fileID: 6958611492816505734}
   m_Layer: 0
   m_Name: lose sound
   m_TagString: Untagged
@@ -41,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 98e3b873b815d8b46868e29824745e35, type: 3}
+  m_audioClip: {fileID: 8300000, guid: fb6d3556c04e385479b8c91aabcf4c1a, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -127,3 +128,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6958611492816505734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5355294820159632594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39fbf31589c7a64c8b7ce5141255038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

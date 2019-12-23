@@ -15,16 +15,18 @@ public class enemy : MonoBehaviour
 
 
     public GameObject tako;
-    public GameObject loseSound;
 
-    private BoxCollider2D boxCollider;
-    private Rigidbody2D rb2d;
-    private SpriteRenderer spriteRenderer;
+    public GameObject loseSound;
+    public GameObject standin;
+    public Transform shotPoint;
 
     public Sprite front;
     public Sprite left;
     public Sprite right;
 
+    private BoxCollider2D boxCollider;
+    private Rigidbody2D rb2d;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -44,12 +46,15 @@ public class enemy : MonoBehaviour
             {
                 speed = 0;
                 spriteRenderer.sprite = front;
+                GameObject atk = Instantiate(standin, shotPoint.position, shotPoint.rotation);
                 Instantiate(loseSound, transform.position, Quaternion.identity);
+                Destroy(gameObject);
                 timeOut -= Time.deltaTime; // shorthand for: timeOut = timeOut - Time.deltaTime
             }
             else
             {
-                SceneManager.LoadScene("Start_Scene");
+               
+                SceneManager.LoadScene("GameOver");
             }
         }
     }
@@ -93,7 +98,7 @@ public class enemy : MonoBehaviour
         if (otherGO.name == "Tako")
         {
             frameState = "seen";
-            timeOut = 1f;
+            timeOut = .25f;
         }
 
         

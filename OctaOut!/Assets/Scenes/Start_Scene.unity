@@ -402,6 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeOut: 0
+  splash: {fileID: 1650355677582043727, guid: 47129639760faf645a6dc7194c61d1b3, type: 3}
   startscreen: {fileID: 21300000, guid: f3145909e8f8f074295910d288e82a6c, type: 3}
   tutorial1: {fileID: 21300000, guid: 08d82be78269b4e4ea9932d2293cf009, type: 3}
   tutorial2: {fileID: 21300000, guid: ea3b76438b830574a94046238ee2f151, type: 3}
