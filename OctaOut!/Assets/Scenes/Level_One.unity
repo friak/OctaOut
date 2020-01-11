@@ -928,7 +928,6 @@ GameObject:
   - component: {fileID: 411086646}
   - component: {fileID: 411086647}
   - component: {fileID: 411086648}
-  - component: {fileID: 411086649}
   m_Layer: 0
   m_Name: L4
   m_TagString: Untagged
@@ -992,21 +991,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.26537454, y: 0.20977283}
   m_EdgeRadius: 0
---- !u!114 &411086649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 411086645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90109b6173841b54f9a7d0b78bc1cc8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  splash: {fileID: 0}
-  tako: {fileID: 1771256421}
 --- !u!1 &415420678
 GameObject:
   m_ObjectHideFlags: 0
@@ -1227,7 +1211,6 @@ GameObject:
   - component: {fileID: 455109848}
   - component: {fileID: 455109849}
   - component: {fileID: 455109850}
-  - component: {fileID: 455109851}
   m_Layer: 8
   m_Name: L2
   m_TagString: tako
@@ -1291,21 +1274,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.31493175, y: 0.13963343}
   m_EdgeRadius: 0
---- !u!114 &455109851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455109847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90109b6173841b54f9a7d0b78bc1cc8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  splash: {fileID: 0}
-  tako: {fileID: 1771256421}
 --- !u!1 &494869441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,7 +1904,6 @@ GameObject:
   - component: {fileID: 1010939941}
   - component: {fileID: 1010939942}
   - component: {fileID: 1010939943}
-  - component: {fileID: 1010939944}
   m_Layer: 0
   m_Name: L3
   m_TagString: Untagged
@@ -2000,21 +1967,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.259582, y: 0.17459987}
   m_EdgeRadius: 0
---- !u!114 &1010939944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010939940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90109b6173841b54f9a7d0b78bc1cc8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  splash: {fileID: 0}
-  tako: {fileID: 1771256421}
 --- !u!1 &1033067356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,7 +2641,6 @@ GameObject:
   - component: {fileID: 1314793351}
   - component: {fileID: 1314793352}
   - component: {fileID: 1314793353}
-  - component: {fileID: 1314793354}
   m_Layer: 8
   m_Name: L1
   m_TagString: tako
@@ -2704,13 +2655,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314793350}
-  m_LocalRotation: {x: 0, y: 0, z: 0.019620571, w: -0.9998075}
+  m_LocalRotation: {x: 0, y: 0, z: -0.076371066, w: 0.9970795}
   m_LocalPosition: {x: 0.46200618, y: 0.0848182, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 684474863}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.2480001}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.76}
 --- !u!114 &1314793352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,21 +2704,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28991812, y: 0.19100687}
   m_EdgeRadius: 0
---- !u!114 &1314793354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314793350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90109b6173841b54f9a7d0b78bc1cc8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  splash: {fileID: 0}
-  tako: {fileID: 1771256421}
 --- !u!1 &1333994879
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,6 +3667,7 @@ GameObject:
   - component: {fileID: 1771256425}
   - component: {fileID: 1771256427}
   - component: {fileID: 1771256426}
+  - component: {fileID: 1771256428}
   m_Layer: 8
   m_Name: Tako
   m_TagString: tako
@@ -3901,6 +3838,25 @@ MonoBehaviour:
   offLeft: 0
   offUp: 0
   offDown: 0
+--- !u!114 &1771256428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771256421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da3d8f1b998a1444396ad9ca74574cbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  tako: {fileID: 1771256421}
+  l1: {fileID: 1314793350}
+  l2: {fileID: 455109847}
+  l3: {fileID: 1010939940}
+  l4: {fileID: 411086645}
+  splash: {fileID: 0}
 --- !u!1 &1795159047
 GameObject:
   m_ObjectHideFlags: 0

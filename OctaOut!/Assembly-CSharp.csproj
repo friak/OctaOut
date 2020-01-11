@@ -139,6 +139,7 @@
     <Compile Include="Assets\Scripts\follow_player.cs" />
     <Compile Include="Assets\Scripts\go_GameOver.cs" />
     <Compile Include="Assets\Scripts\L3_script.cs" />
+    <Compile Include="Assets\Scripts\left_arm_test.cs" />
     <Compile Include="Assets\Scripts\left_hand.cs" />
     <Compile Include="Assets\Scripts\player_script.cs" />
     <Compile Include="Assets\Scripts\right_hand.cs" />

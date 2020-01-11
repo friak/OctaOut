@@ -26,7 +26,7 @@ public class start : MonoBehaviour
     private Rigidbody2D rb2d;
 
     //Serial Communication
-    SerialPort sp = new SerialPort("COM4", 9600);
+    SerialPort sp = new SerialPort("COM11", 9600);
 
 
     void Start()

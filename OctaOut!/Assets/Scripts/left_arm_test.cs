@@ -5,22 +5,26 @@ using System.IO;
 using System.IO.Ports;
 
 
-public class left_hand : MonoBehaviour
+public class left_arm_test : MonoBehaviour
 {
 
 
     //positioning for tentacle 
-    private float pos = 0f;
+    private float posl1 = 0f;
+    private float posl2 = 0f;
+    private float posl3 = 0f;
+    private float posl4 = 0f;
+
+
     public float speed = 10f;
 
-
-    private GameObject l1;
-    private GameObject l2;
-    private GameObject l3;
-    private GameObject l4;
+    public GameObject tako;
+    public GameObject l1;
+    public GameObject l2;
+    public GameObject l3;
+    public GameObject l4;
 
     public GameObject splash;
-    public GameObject tako;
 
     private Rigidbody2D rb2d;
 
@@ -42,13 +46,6 @@ public class left_hand : MonoBehaviour
 
         rb2d = tako.GetComponent<Rigidbody2D>();
 
-
-        l1 = GameObject.Find("L1");
-
-        l2 = GameObject.Find("L2");
-        l3 = GameObject.Find("L3");
-        l4 = GameObject.Find("L4");
-
     }
 
 
@@ -69,44 +66,39 @@ public class left_hand : MonoBehaviour
 
             //Debug.Log(data[1]);
 
-            if (gameObject.name == "L1")
-            {
                 if (l1val <= 356 || Input.GetKey(KeyCode.F))
                 {
                     // Debug.Log("bend" + pos);
 
-                    pos += 2f * speed;
-                    transform.localRotation = Quaternion.Euler(0, 0, pos);
+                    posl1 += 2f * speed;
+                    l1.transform.localRotation = Quaternion.Euler(0, 0, posl1);
                     Vector2 force = new Vector2(5, 10);
                     rb2d.AddForce(force);
                 }
                 else
                 {
                     //        Debug.Log("no bend");
-                    pos = 0f;
+                    posl1 = 0f;
                     transform.localRotation = Quaternion.Euler(0, 0, 0);
                 }
-            }
-            Debug.Log(gameObject.name);
-            if (gameObject.name == "L2")
-            {
+
 
                 if (l2val <= 356 || Input.GetKey(KeyCode.D))
                 {
-                    Debug.Log("bend" + pos);
+                    Debug.Log("bend" + posl2);
 
-                    pos += 2f * speed;
-                    transform.localRotation = Quaternion.Euler(0, 0, pos);
+                    posl2 += 2f * speed;
+                    l2.transform.localRotation = Quaternion.Euler(0, 0, posl2);
                     Vector2 force = new Vector2(5, 10);
                     rb2d.AddForce(force);
                 }
                 else
                 {
                     Debug.Log("no bend");
-                    pos = 0f;
+                    posl2 = 0f;
                     transform.localRotation = Quaternion.Euler(0, 0, 0);
                 }
-            }
+            
 
 
         }
@@ -119,42 +111,34 @@ public class left_hand : MonoBehaviour
 
         //KETBOARD DEBUG
 
-
-
-        if (gameObject.name == "L3")
-        {
             if (Input.GetKey(KeyCode.S))
             {
-                Debug.Log("bend");
-                pos -= 2f * speed;
-                transform.localRotation = Quaternion.Euler(0, 0, pos);
+                posl3 -= 2f * speed;
+                l3.transform.localRotation = Quaternion.Euler(0, 0, posl3);
                 Vector2 force = new Vector2(5, 5);
                 rb2d.AddForce(force);
             }
             else
             {
-                pos = 0f;
+                posl3 = 0f;
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
 
-        }
 
-        if (gameObject.name == "L4")
-        {
             if (Input.GetKey(KeyCode.A))
             {
-                pos -= 2f * speed;
-                transform.localRotation = Quaternion.Euler(0, 0, pos);
+                posl4 -= 2f * speed;
+                l4.transform.localRotation = Quaternion.Euler(0, 0, posl4);
                 Vector2 force = new Vector2(5, 5);
                 rb2d.AddForce(force);
             }
             else
             {
-                pos = 0f;
+                posl4 = 0f;
                 transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
 
-        }
+        
 
     }
 
