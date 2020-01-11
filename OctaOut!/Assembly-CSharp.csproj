@@ -86,53 +86,6 @@
     <Compile Include="Assets\Anima2D\Scripts\SpriteMesh.cs" />
     <Compile Include="Assets\Anima2D\Scripts\SpriteMeshAnimation.cs" />
     <Compile Include="Assets\Anima2D\Scripts\SpriteMeshInstance.cs" />
-    <Compile Include="Assets\ARDUnity\Examples\Custom Controller\MyController.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ColorInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ColorOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\CurveOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\DragInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ImpulseInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\InputFilter.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\MappingInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\OutputCombine.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\RTTTLSong.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ToggleInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ToneOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\TriggerInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\ValueOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\CommSocket\CommSerial.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\AnalogInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\AnalogOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\DigitalInput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\DigitalOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\GenericServo.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\GenericTone.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\PulseOutput.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Internal\ControllerDataType.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\AudioSourceReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\ButtonReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\ColliderReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\DialSliderReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\DropdownReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\ExplosionReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\ForceReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\LightColorReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\LightIntensityReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\MoveAxisReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Rotation2DReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\RotationAxisReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\SliderReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\TextReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\ToggleReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\TorqueReactor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\ArdunityAppUI.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\CommSerialUI.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\CommSocketUI.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\DialSlider.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\ListItem.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\ListView.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\SliderSnap.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\ToggleEvent.cs" />
     <Compile Include="Assets\Scripts\audiostay.cs" />
     <Compile Include="Assets\Scripts\bound_check.cs" />
     <Compile Include="Assets\Scripts\enemy.cs" />
@@ -153,9 +106,7 @@
     <None Include="Assets\Anima2D\Examples\Shaders\Unlit-Alpha-Cull-off.shader" />
     <None Include="Assets\Anima2D\Licenses.txt" />
     <None Include="Assets\Anima2D\Examples\Shaders\VertexLitOneDirectional.shader" />
-    <None Include="Assets\ARDUnity\Examples\Buzzer\SampleSongs.txt" />
     <None Include="Assets\Anima2D\Readme.txt" />
-    <None Include="Assets\ARDUnity\Plugins\Android\AndroidManifest.xml" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -362,9 +313,6 @@
     </Reference>
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
-    </Reference>
-    <Reference Include="ArdunityCore">
-      <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Assets/ARDUnity/Scripts/Internal/ArdunityCore.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:/2019.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

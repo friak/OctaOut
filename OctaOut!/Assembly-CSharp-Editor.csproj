@@ -198,51 +198,6 @@
     <Compile Include="Assets\Anima2D\Scripts\Editor\VertexManipulator\VertexManipulator.cs" />
     <Compile Include="Assets\Anima2D\Scripts\Editor\WeightEditor.cs" />
     <Compile Include="Assets\Anima2D\Scripts\Editor\WindowEditorTool.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ColorInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ColorOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\CurveOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\DragInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ImpulseInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\InputFilterEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\MappingInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\OutputCombineEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\RTTTLSongEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ToggleInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ToneOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\TriggerInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Bridge\Editor\ValueOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\CommSocket\Editor\CommSerialEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\AnalogInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\AnalogOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\DigitalInputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\DigitalOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\GenericServoEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\GenericToneEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Controller\Editor\PulseOutputEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Internal\Editor\AboutArdunity.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\AudioSourceReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\ButtonReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\ColliderReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\DialSliderReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\DropdownReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\ExplosionReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\ForceReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\LightColorReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\LightIntensityReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\MoveAxisReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\Rotation2DReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\RotationAxisReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\SliderReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\TextReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\ToggleReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Reactor\Editor\TorqueReactorEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\ArdunityAppUIEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\CommSerialUIEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\DialSliderEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\ListItemEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\ListViewEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\SliderSnapEditor.cs" />
-    <Compile Include="Assets\ARDUnity\Scripts\Utility\Editor\ToggleEventEditor.cs" />
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
@@ -470,12 +425,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="ArdunityCore">
-      <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Assets/ARDUnity/Scripts/Internal/ArdunityCore.dll</HintPath>
-    </Reference>
-    <Reference Include="ArdunityCoreEditor">
-      <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Assets/ARDUnity/Scripts/Internal/Editor/ArdunityCoreEditor.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Documents/GitHub/OctaOut/OctaOut!/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
