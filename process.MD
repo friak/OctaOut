@@ -2,7 +2,7 @@
 ## By Ria Khan
 Alternative input stealth game about an octopus escaping a sushi restaurant.
 
-## The Idea and Core Mechanics
+## 10.15.19 Original Idea and Core Mechanics
 The player is a cute octopus that is trying to escape a sushi restaurant and avoid becoming lunch! The goal of the level is to sneak out of the restaurant by hiding behind objects, crawling into containers, and essentially qwoping your way out. The added fun is that you really are the octopus--by controlling its tentacles with the movement of your fingers! The way this works is that the alt. controller is a set of gloves that uses flex sensors to sense how the player curls their fingers and thus curling and moving the tentacles of the octopus. So yes, octopus qwop, @ me Bennett Foddy.
 
 ## Design goals
@@ -13,7 +13,7 @@ Stealth
 Funny physics that isn't too difficult
 
 
-# Process Update no.1
+# 10.28.19 Process Update no.1
 
 ## Super tentative timeline
 
@@ -75,9 +75,8 @@ Literally just the toon shading feature in Unity (aesthetics)
 ![full sketch of octopus](images/sketch-3.JPG)
 
 
-# Process Update no. 2
+# 10.30.19 Process Update no. 2
 
-oct 30th
 
 Today, I did some Arduino tests to test bend sensor values being serially sent to unity, and it worked!
 
@@ -86,9 +85,8 @@ Today, I did some Arduino tests to test bend sensor values being serially sent t
 [![Initial Demo](https://i.ibb.co/RNXcKK5/https-i-vimeocdn-com-video-827362140-720.jpg)](https://vimeo.com/370203231 "Initial Demo")
 
 
-# Process Update no. 3
+# 11.6.19 Process Update no. 3
 
-nov 6
 
 ![full sketch of octopus](images/sketch-3.JPG)
 
@@ -119,7 +117,7 @@ Tako's Story:
 
 Tako (japanese for octopus) is a wholesome little octopus; he's shy and still very young and naive to the world. One day, he got lost from his family and came across a friendly seeming diver. Innocently, Tako swam over to say hi and ask for directions back home. The diver however was not looking to be a good samaritan and forcibly grabbed Tako and didn't let go. So shocked and scared, Tako fainted, and he was taken away to be made into sushi at a small restaurant in the California bay area. He awakes in a fish tank at the restaurant and realizes where he is. Panicked, he looks around and sees out the window of the restaurant the ocean shore--home! Tako is so frightened after waking in this nightmare situation, and he's always been a bit cowardly. But, if he doesn't want to be made into food, he has to get brave and escape! Now he's more cautious than ever though after trusting the human and being snatched up as a result, and he feels like the safest course of action is to sneak and be undetected. Will Tako make it back home? Or will he be made into a side sashimi for a Silicon Valley business man?? Find out ~~next time on Dragon Ball Z~~ by playing my game.
 
-# Process Update no. 4
+# 11.20.19 Process Update no. 4
 
 Due to time constraints, I tweaked the game values to now include:
 
@@ -144,7 +142,7 @@ But I'm getting back into it, maybe creating an even better octopus model, and I
 
 
 
-# Process Update no. 5 (sound!)
+# 12.2.19 Process Update no. 5 (sound!)
 
 
 ### Splash Screens and/or Cinematics
@@ -181,4 +179,14 @@ There's something about Japanese jazz bossa novas that bring out the idea of nos
 For the enemy (the sushi chef whose gaze you're avoiding), I wanted to attach audio to him to where if he's off-screen, the player can know if he's coming and how close he is. I also want the audio to be ominoius to set the tone of oncoming danger but still fit into the atmosphere, so I'm using the bridge from "Mista Swing" (background track) to achieve that with a different but still congruent sound. I also want the background music and enemy audio to both play when the game level scene opens so that they'll always be on tempo with each other and melt together. I want Tako to sound squishy when coming into contact with things around them, and I believe the blooper squids from Mario (specifically sunshine) captures that well. I'll also be taking samples sounds from Katamari (like "game27") because I enjoy the simple yet layered mixing of a lot of them, and they fir the theme of Tako and the game aesthetics. Lastly, I want the "!" alarmed noise from MGS play when Tako is caught by the chef, so that it's fittingly alarming, but with the context of nostalgia, still light-hearted.
 
 
+# 1.11.20 Process Update no. 6
 
+The game has an Itch Page now!
+
+### Some big changes
+
+- The Arduino code has been completely re-written, but is now simplified! Instead of flushing values when the sensors are bent and not bent, the code simply takes all analog values from the four sensors, maps the values from a range between 0-359, and sends the data to Unity in a string. The unity code takes the raw values now and uses them in the code directly. *There's will soon be documentation in the Arduino_code folder including communication setup and schematics, so stay tuned!*
+
+- There are two levels to the game!
+
+- Animations will be added to the game as well. 
