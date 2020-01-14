@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4980716747466389543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4980716747466389537}
+  - component: {fileID: 4980716747466389536}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4980716747466389537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980716747466389543}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36.288036, y: -17.64179, z: -681.47186}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4980716747466389536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4980716747466389543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27aec431632e1a4196cb7f1febfd918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Next
+    clip: {fileID: 8300000, guid: 2eb4d039202df0a409dc0e22ba8334d7, type: 3}
+    volume: 0.806
+    pitch: 1.66
+    loop: 0
+    source: {fileID: 0}
+  - name: Splash
+    clip: {fileID: 8300000, guid: ed201ca694144cc498da972a41a5acd8, type: 3}
+    volume: 0.543
+    pitch: 1.83
+    loop: 0
+    source: {fileID: 0}
+  - name: Worry
+    clip: {fileID: 8300000, guid: 9744d3cf9736b4a408e8b70cabe76719, type: 3}
+    volume: 0.468
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Theme
+    clip: {fileID: 8300000, guid: f2e1546e110c0b4458910b0cad0b6322, type: 3}
+    volume: 0.812
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: 60d5aea40e5ec504bbcece74e8729994, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Start
+    clip: {fileID: 8300000, guid: c91ed285f25e8364f8be3dc5ea8133fb, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Damage
+    clip: {fileID: 8300000, guid: edde556fe56b97148bf528d550c1d7ce, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Swim
+    clip: {fileID: 8300000, guid: c37c293e1edd0cf45802930848da2872, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Move
+    clip: {fileID: 8300000, guid: d9d5f50eaae20504289d31e5f0758a7b, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Alert
+    clip: {fileID: 8300000, guid: fb6d3556c04e385479b8c91aabcf4c1a, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Clear
+    clip: {fileID: 8300000, guid: c71f21b878b46d14eb67a813a7ecc351, type: 3}
+    volume: 0.673
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  splash: {fileID: 7300535989758313032, guid: 55e92725ccf89174c9613f792cee196f, type: 3}
+  plip: {fileID: 5128579305587844489, guid: dc44563d756c9814daeb06b2c36a4ebb, type: 3}

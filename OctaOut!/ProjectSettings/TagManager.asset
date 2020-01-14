@@ -7,7 +7,8 @@ TagManager:
   - water
   - tako
   - prop
-  - Win state
+  - danger
+  - clear
   layers:
   - Default
   - TransparentFX

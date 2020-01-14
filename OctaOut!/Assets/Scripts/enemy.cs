@@ -16,7 +16,6 @@ public class enemy : MonoBehaviour
 
     public GameObject tako;
 
-    public GameObject loseSound;
     public GameObject standin;
     public Transform shotPoint;
 
@@ -47,14 +46,13 @@ public class enemy : MonoBehaviour
                 speed = 0;
                 spriteRenderer.sprite = front;
                 GameObject atk = Instantiate(standin, shotPoint.position, shotPoint.rotation);
-                Instantiate(loseSound, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+                FindObjectOfType<AudioManager>().Play("Alert");
                 timeOut -= Time.deltaTime; // shorthand for: timeOut = timeOut - Time.deltaTime
             }
             else
             {
                
-                SceneManager.LoadScene("GameOver");
+                SceneManager.LoadScene("Lose_One");
             }
         }
     }

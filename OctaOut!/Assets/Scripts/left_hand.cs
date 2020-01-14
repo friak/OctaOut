@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 using System.IO;
 using System.IO.Ports;
@@ -10,44 +11,40 @@ public class left_hand : MonoBehaviour
 
 
     //positioning for tentacle 
-    private float pos = 0f;
+    private float posl1 = 0f;
+    private float posl2 = 0f;
+    private float posl3 = 0f;
+    private float posl4 = 0f;
+
+
     public float speed = 10f;
 
-
-    private GameObject l1;
-    private GameObject l2;
-    private GameObject l3;
-    private GameObject l4;
-
-    public GameObject splash;
     public GameObject tako;
-
     private Rigidbody2D rb2d;
+    float maxVelocity = 6;
+
+    public GameObject l1;
+    public GameObject l2;
+    public GameObject l3;
+    public GameObject l4;
 
 
     //Serial Communication
-    SerialPort stream = new SerialPort("COM11", 38400);
+    SerialPort leftstream = new SerialPort("COM11", 38400);
 
     void Start()
     {
         try
         {
-            stream.Open();
-            stream.ReadTimeout = 1;
+            leftstream.Open();
+            leftstream.ReadTimeout = 1;
         }
         catch (System.Exception)
         {
-            Debug.Log("Left Hand Not Found!");
+            Debug.Log("Hands Not Found!");
         }
 
         rb2d = tako.GetComponent<Rigidbody2D>();
-
-
-        l1 = GameObject.Find("L1");
-
-        l2 = GameObject.Find("L2");
-        l3 = GameObject.Find("L3");
-        l4 = GameObject.Find("L4");
 
     }
 
@@ -55,105 +52,110 @@ public class left_hand : MonoBehaviour
 
     void FixedUpdate()
     {
-
-        //ARDUINO CONTROLS
-        //Debug.Log("open!");
         try
         {
+            //READING ARDUINO DATA
 
-            string[] data = stream.ReadLine().Split(','); //Read the information
-            float l1val = float.Parse(data[0]);
-            float l2val = float.Parse(data[1]);
-            float l3val = float.Parse(data[2]);
-            float l4val = float.Parse(data[3]);
+            string[] ldata = leftstream.ReadLine().Split(','); //Read the information
+            float l1val = float.Parse(ldata[0]);
+            float l2val = float.Parse(ldata[1]);
+            float l3val = float.Parse(ldata[2]);
+            float l4val = float.Parse(ldata[3]);
 
-            //Debug.Log(data[1]);
+            Debug.Log(ldata[0]);
 
-            if (gameObject.name == "L1")
+
+
+            //LEFT HAND
+            if (l1val <= 357 || Input.GetKey(KeyCode.F))
             {
-                if (l1val <= 356 || Input.GetKey(KeyCode.F))
-                {
-                    // Debug.Log("bend" + pos);
+                Debug.Log("bendl1" + posl1);
 
-                    pos += 2f * speed;
-                    transform.localRotation = Quaternion.Euler(0, 0, pos);
-                    Vector2 force = new Vector2(5, 10);
+                posl1 -= 2f * speed;
+                FindObjectOfType<AudioManager>().Play("Move");
+                l1.transform.localRotation = Quaternion.Euler(0, 0, posl1);
+                Vector2 force = new Vector2(5, 6);
+                if (rb2d.velocity.magnitude < maxVelocity)
+                {
                     rb2d.AddForce(force);
                 }
-                else
-                {
-                    //        Debug.Log("no bend");
-                    pos = 0f;
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
-                }
             }
-            Debug.Log(gameObject.name);
-            if (gameObject.name == "L2")
+            else
             {
+                // Debug.Log("no bend");
+                posl1 = 0f;
+                l1.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
 
-                if (l2val <= 356 || Input.GetKey(KeyCode.D))
+
+            if (l2val <= 358 || Input.GetKey(KeyCode.D))
+            {
+                Debug.Log("bendl2" + posl2);
+
+                posl2 -= 2f * speed;
+                FindObjectOfType<AudioManager>().Play("Move");
+                l2.transform.localRotation = Quaternion.Euler(0, 0, posl2);
+                Vector2 force = new Vector2(5, 6);
+                if (rb2d.velocity.magnitude < maxVelocity)
                 {
-                    Debug.Log("bend" + pos);
-
-                    pos += 2f * speed;
-                    transform.localRotation = Quaternion.Euler(0, 0, pos);
-                    Vector2 force = new Vector2(5, 10);
                     rb2d.AddForce(force);
                 }
-                else
+            }
+            else
+            {
+                Debug.Log("no bend");
+                posl2 = 0f;
+                l2.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+
+            if (l3val <= 358 || Input.GetKey(KeyCode.S))
+            {
+                Debug.Log("bendl3" + posl3);
+
+                posl3 += 2f * speed;
+                FindObjectOfType<AudioManager>().Play("Move");
+                l3.transform.localRotation = Quaternion.Euler(0, 0, posl3);
+                Vector2 force = new Vector2(-5, 6);
+                if (rb2d.velocity.magnitude < maxVelocity)
                 {
-                    Debug.Log("no bend");
-                    pos = 0f;
-                    transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    rb2d.AddForce(force);
                 }
             }
+            else
+            {
+                Debug.Log("no bend");
+                posl3 = 0f;
+                l3.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+
+            if (l4val <= 357 || Input.GetKey(KeyCode.A))
+            {
+                Debug.Log("bendl4" + posl4);
+
+                posl4 += 2f * speed;
+                FindObjectOfType<AudioManager>().Play("Move");
+                l4.transform.localRotation = Quaternion.Euler(0, 0, posl4);
+                Vector2 force = new Vector2(-5, 6);
+                if (rb2d.velocity.magnitude < maxVelocity)
+                {
+                    rb2d.AddForce(force);
+                }
+            }
+            else
+            {
+                Debug.Log("no bend");
+                posl4 = 0f;
+                l4.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+
 
 
         }
+
+
         catch (System.Exception)
         {
             return;
-        }
-
-
-
-        //KETBOARD DEBUG
-
-
-
-        if (gameObject.name == "L3")
-        {
-            if (Input.GetKey(KeyCode.S))
-            {
-                Debug.Log("bend");
-                pos -= 2f * speed;
-                transform.localRotation = Quaternion.Euler(0, 0, pos);
-                Vector2 force = new Vector2(5, 5);
-                rb2d.AddForce(force);
-            }
-            else
-            {
-                pos = 0f;
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-            }
-
-        }
-
-        if (gameObject.name == "L4")
-        {
-            if (Input.GetKey(KeyCode.A))
-            {
-                pos -= 2f * speed;
-                transform.localRotation = Quaternion.Euler(0, 0, pos);
-                Vector2 force = new Vector2(5, 5);
-                rb2d.AddForce(force);
-            }
-            else
-            {
-                pos = 0f;
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-            }
-
         }
 
     }

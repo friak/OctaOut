@@ -8,25 +8,26 @@ using UnityEngine.SceneManagement;
 public class start : MonoBehaviour
 {
 
-    //frame states
-    private string frameState = "start"; //player is idle
+    //frame states for tutorial cards
+    public string frameState = "start"; //player is idle
     public float timeOut = 0f; //time within each state
 
-    public GameObject splash;
+    public GameObject Music;
 
-
-    //...sprites
+    //Tutorial sprites
     public Sprite startscreen;
     public Sprite tutorial1;
     public Sprite tutorial2;
     public Sprite tutorial3;
     public Sprite tutorial4;
+    public Sprite tutorial5;
+    public Sprite toblack;
     private SpriteRenderer spriteRenderer;
 
     private Rigidbody2D rb2d;
 
     //Serial Communication
-    SerialPort sp = new SerialPort("COM11", 9600);
+    SerialPort leftstream = new SerialPort("COM11", 38400);
 
 
     void Start()
@@ -34,8 +35,8 @@ public class start : MonoBehaviour
         // sp.Open() will throw an error if it can't find an arduino and this "try" block will catch that error and allow the game to keep running
         try
         {
-            sp.Open();
-            sp.ReadTimeout = 25;
+            leftstream.Open();
+            leftstream.ReadTimeout = 25;
         }
         catch (System.Exception)
         {
@@ -47,119 +48,146 @@ public class start : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer.sprite == null) // if the sprite on spriteRenderer is null then
             spriteRenderer.sprite = startscreen;
+
     }
 
     void Update()
     {
 
         //SERIAL
-        if (sp.IsOpen)
+        if (leftstream.IsOpen)
         {
             try
             {
-               // MoveObject(sp.ReadByte());
-                //print(sp.ReadByte());
+                //READING ARDUINO DATA
+
+                string[] ldata = leftstream.ReadLine().Split(','); //Read the information
+                float l1val = float.Parse(ldata[0]);
+                float l2val = float.Parse(ldata[1]);
+                float l3val = float.Parse(ldata[2]);
+                float l4val = float.Parse(ldata[3]);
+
+                //Debug.Log(ldata[0]);
+
+                //INPUTS
+
+                if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "start")
+                {
+                    FindObjectOfType<AudioManager>().Play("Next");
+                    frameState = "tutorial1";
+                    timeOut = 1f;
+
+                }
+                else if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "tutorial1" && timeOut <= 0f)
+                {
+                    FindObjectOfType<AudioManager>().Play("Next");
+                    frameState = "tutorial2";
+                    timeOut = 1f;
+
+                }
+                else if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "tutorial2" && timeOut <= 0f)
+                {
+                    FindObjectOfType<AudioManager>().Play("Next");
+                    frameState = "tutorial3";
+                    timeOut = 1f;
+
+                }
+                else if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "tutorial3" && timeOut <= 0f)
+                {
+                    FindObjectOfType<AudioManager>().Play("Next");
+                    frameState = "tutorial4";
+                    timeOut = 1f;
+
+                }
+                else if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "tutorial4" && timeOut <= 0f)
+                {
+                    FindObjectOfType<AudioManager>().Play("Next");
+                    frameState = "tutorial5";
+                    timeOut = 1f;
+
+                }
+                else if ((l1val <= 356 || Input.GetKey(KeyCode.A)) && frameState == "tutorial5" && timeOut <= 0f)
+                {
+                    FindObjectOfType<AudioManager>().Play("Start");
+                    Destroy(Music);
+                    spriteRenderer.sprite = toblack;
+                    frameState = "done";
+                    timeOut = 5f;
+
+                }
             }
             catch (System.Exception)
             {
 
             }
-        }
 
-        //FRAME STATE
 
-        if (frameState == "start")
-        {
+            //FRAME STATES
 
-            spriteRenderer.sprite = startscreen;
-            timeOut -= Time.deltaTime;
+            if (frameState == "start")
+            {
 
-        }
-        if (frameState == "tutorial1")
-        {
-            if (timeOut >= 0)
-            {
-                spriteRenderer.sprite = tutorial1;
+                spriteRenderer.sprite = startscreen;
                 timeOut -= Time.deltaTime;
+
             }
- 
-        }
-        if (frameState == "tutorial2")
-        {
-            if (timeOut >= 0)
+            if (frameState == "tutorial1")
             {
-                spriteRenderer.sprite = tutorial2;
-                timeOut -= Time.deltaTime;
-            }
- 
-        }
-        if (frameState == "tutorial3")
-        { 
-            if (timeOut >= 0)
-            {
-                spriteRenderer.sprite = tutorial3;
-                timeOut -= Time.deltaTime;
-            }
-        }
-        if (frameState == "tutorial4")
-        {
-            if (timeOut >= 0)
-            {
-                spriteRenderer.sprite = tutorial4;
-                timeOut -= Time.deltaTime;
-            }
-        }
-        if (frameState == "done")
                 if (timeOut >= 0)
                 {
-                    {
-
+                    spriteRenderer.sprite = tutorial1;
                     timeOut -= Time.deltaTime;
-                    SceneManager.LoadScene("Game_Scene");
                 }
-           
-        }
+            }
+
+            if (frameState == "tutorial2")
+            {
+                if (timeOut >= 0)
+                {
+                    spriteRenderer.sprite = tutorial2;
+                    timeOut -= Time.deltaTime;
+                }
+
+            }
+            if (frameState == "tutorial3")
+            {
+                if (timeOut >= 0)
+                {
+                    spriteRenderer.sprite = tutorial3;
+                    timeOut -= Time.deltaTime;
+                }
+            }
+            if (frameState == "tutorial4")
+            {
+                if (timeOut >= 0)
+                {
+                    spriteRenderer.sprite = tutorial4;
+                    timeOut -= Time.deltaTime;
+                }
+            }
+            if (frameState == "tutorial5")
+            {
+                if (timeOut >= 0)
+                {
+                    spriteRenderer.sprite = tutorial5;
+                    timeOut -= Time.deltaTime;
+                }
+            }
+            if (frameState == "done")
+            {
+                if (timeOut >= 0)
+                {
+                    timeOut -= Time.deltaTime;
+                }
+                else
+                {
+                    SceneManager.LoadScene("Level_One");
+                }
 
 
-
-        //DEBUG KEYBOARD CONTROLS
-        if (Input.GetKey(KeyCode.A) && frameState == "start")
-        {
-            Instantiate(splash);
-            Destroy(splash);
-            frameState = "tutorial1";
-            timeOut = 1f;
-
+            }
         }
-         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial1" && timeOut <= 0)
-        {
-            Instantiate(splash);
-            Destroy(splash);
-            frameState = "tutorial2";
-            timeOut = 1f;
-        }
-         if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial2" && timeOut <= 0)
-        {
-            Instantiate(splash);
-            Destroy(splash);
-            frameState = "tutorial3";
-            timeOut = 1f;
-        }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial3" && timeOut <= 0)
-        {
-            Instantiate(splash);
-            Destroy(splash);
-            frameState = "tutorial4";
-            timeOut = 1f;
-        }
-        if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.F) && frameState == "tutorial4" && timeOut <=0)
-        {
-            Instantiate(splash);
-            Destroy(splash);
-            frameState = "done";
-            timeOut = 1f;
-        }
-
     }
-
 }
+
+

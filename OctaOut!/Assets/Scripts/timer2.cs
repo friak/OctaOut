@@ -20,7 +20,7 @@ public class timer2 : MonoBehaviour
 
     public void ResetTimer()
     {
-        levelTime = 5f;
+        levelTime = 10f;
     }
 
     // Update is called once per frame
@@ -29,7 +29,7 @@ public class timer2 : MonoBehaviour
         if (levelTime >= 0.0)
         {
             levelTime -= Time.deltaTime;
-            timerText.text = "Returning to Start screen in  " + Mathf.Round(levelTime);
+            timerText.text = "Or return to Start screen in  " + Mathf.Round(levelTime);
         }
         else
         {
