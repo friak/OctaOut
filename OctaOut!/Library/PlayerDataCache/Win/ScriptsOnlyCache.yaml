@@ -5,15 +5,21 @@ ScriptsOnlyBuild:
     - Anima2D.EditorUpdaterProxy
     - Anima2D.SpriteMesh
     - Anima2D.SpriteMeshInstance
+    - AudioManager
+    - audiostay
     - bound_check
+    - clear_one
     - enemy
     - follow_player
+    - go_menu
     - left_hand
+    - menu_music
     - player_script
     - right_hand
     - start
     - timer
     - timer2
+    - timer3
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -24,50 +30,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/GameOver.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 9684}
-    - Class: 114
-      Script: {instanceID: 9876}
-    - Class: 114
-      Script: {instanceID: 11218}
-    - Class: 114
-      Script: {instanceID: 11316}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 212
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Game_Scene.unity:
+    Assets/Scenes/Level_One.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -98,43 +61,216 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 9684}
     - Class: 114
-      Script: {instanceID: 9744}
+      Script: {instanceID: 9692}
     - Class: 114
-      Script: {instanceID: 9788}
+      Script: {instanceID: 9696}
     - Class: 114
-      Script: {instanceID: 9846}
+      Script: {instanceID: 9748}
     - Class: 114
-      Script: {instanceID: 9876}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 10360}
+      Script: {instanceID: 9882}
     - Class: 114
-      Script: {instanceID: 10588}
+      Script: {instanceID: 10134}
     - Class: 114
-      Script: {instanceID: 10684}
+      Script: {instanceID: 10374}
     - Class: 114
-      Script: {instanceID: 10806}
+      Script: {instanceID: 10604}
     - Class: 114
-      Script: {instanceID: 10888}
+      Script: {instanceID: 10700}
     - Class: 114
-      Script: {instanceID: 11128}
+      Script: {instanceID: 10720}
     - Class: 114
-      Script: {instanceID: 11132}
+      Script: {instanceID: 10824}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 10906}
     - Class: 114
-      Script: {instanceID: 11730}
+      Script: {instanceID: 11146}
     - Class: 114
-      Script: {instanceID: 11742}
+      Script: {instanceID: 11150}
+    - Class: 114
+      Script: {instanceID: 11180}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 114
+      Script: {instanceID: 11754}
+    - Class: 114
+      Script: {instanceID: 11766}
+    - Class: 114
+      Script: {instanceID: 13480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Level_Two.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9692}
+    - Class: 114
+      Script: {instanceID: 9696}
+    - Class: 114
+      Script: {instanceID: 9748}
+    - Class: 114
+      Script: {instanceID: 9794}
+    - Class: 114
+      Script: {instanceID: 10134}
+    - Class: 114
+      Script: {instanceID: 10604}
+    - Class: 114
+      Script: {instanceID: 10700}
+    - Class: 114
+      Script: {instanceID: 10720}
+    - Class: 114
+      Script: {instanceID: 10824}
+    - Class: 114
+      Script: {instanceID: 10906}
+    - Class: 114
+      Script: {instanceID: 11146}
+    - Class: 114
+      Script: {instanceID: 11150}
+    - Class: 114
+      Script: {instanceID: 11180}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    Assets/Scenes/Lose_One.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9684}
+    - Class: 114
+      Script: {instanceID: 9882}
+    - Class: 114
+      Script: {instanceID: 10480}
+    - Class: 114
+      Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Lose_Two.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9684}
+    - Class: 114
+      Script: {instanceID: 9882}
+    - Class: 114
+      Script: {instanceID: 10480}
+    - Class: 114
+      Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -172,7 +308,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 10466}
+      Script: {instanceID: 9692}
+    - Class: 114
+      Script: {instanceID: 10134}
+    - Class: 114
+      Script: {instanceID: 10482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -181,7 +321,54 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
-    Assets/Scenes/Win.unity:
+    Assets/Scenes/Win_One.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9684}
+    - Class: 114
+      Script: {instanceID: 9882}
+    - Class: 114
+      Script: {instanceID: 11238}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Win_Two.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -200,11 +387,29 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9684}
+    - Class: 114
+      Script: {instanceID: 9752}
+    - Class: 114
+      Script: {instanceID: 9882}
+    - Class: 114
+      Script: {instanceID: 11336}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -213,6 +418,18 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: menu_music
+  - hash:
+      serializedVersion: 2
+      Hash: 0bafc10893e4e9c3749c9afba1a160f2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: clear_one
   - hash:
       serializedVersion: 2
       Hash: 3c08375166df118bd1801438fc36b92f
@@ -239,13 +456,19 @@ ScriptsOnlyBuild:
     className: bound_check
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: timer3
+  - hash:
+      serializedVersion: 2
       Hash: 44314f17d73471e7e9bb1ce7fa6ecb9b
     assemblyName: Assembly-CSharp.dll
     namespaceName: Anima2D
     className: SpriteMeshAnimation
   - hash:
       serializedVersion: 2
-      Hash: 87c4fa9223d4ddece9cad83810076c72
+      Hash: c7f90dc3dc7ee0bd08771b44a35ea66c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: player_script
@@ -257,16 +480,16 @@ ScriptsOnlyBuild:
     className: TMP_ScrollbarEventHandler
   - hash:
       serializedVersion: 2
+      Hash: 61fd55811202efac98c9dd5e9c5aa4cd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: go_GameOver
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 358da0ff1f630e016a28b075782874ba
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: left_hand
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -309,6 +532,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: move_sounds
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -359,6 +588,12 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
+      Hash: a7e2364c6a5a4b767e9e4cc3b143a76c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -381,6 +616,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Theme_Music
   - hash:
       serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
@@ -431,7 +672,13 @@ ScriptsOnlyBuild:
     className: IkLimb2D
   - hash:
       serializedVersion: 2
-      Hash: 5080ff6710c65e84dbf2748e196ab5f0
+      Hash: 2007932bed34f7472bf6f4cb69f17cfe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: go_menu
+  - hash:
+      serializedVersion: 2
+      Hash: 9d884a8a1cda80d0eb5eb12f23778479
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: start
@@ -480,6 +727,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: audiostay
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
@@ -503,7 +756,7 @@ ScriptsOnlyBuild:
     className: SpriteCycle
   - hash:
       serializedVersion: 2
-      Hash: 358da0ff1f630e016a28b075782874ba
+      Hash: 521abba17dcc23ba1c28eb6abf0e64d9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: right_hand
@@ -584,7 +837,7 @@ ScriptsOnlyBuild:
       Hash: bb0259237d1137b96fd6cdddd550b48f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: test
+    className: testing
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -599,10 +852,16 @@ ScriptsOnlyBuild:
     className: SpriteMeshInstance
   - hash:
       serializedVersion: 2
-      Hash: 41b28d417916502aae12828658111eb4
+      Hash: d6a04bd66b53856775daa58b1de51644
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: enemy
+  - hash:
+      serializedVersion: 2
+      Hash: d4eb90b12487cacf015cec515d19d07a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: left_hand
   - hash:
       serializedVersion: 2
       Hash: c7524f6d2a9246ca362a31c7bbcec536
@@ -699,6 +958,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 46e6b81b6dea5c4e8614e37f48db1d61
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: next_level
   - hash:
       serializedVersion: 2
       Hash: bff72eb8ce705e2c23665a3cec83404f
@@ -798,7 +1063,10 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/Start_Scene.unity
-  - Assets/Scenes/Game_Scene.unity
-  - Assets/Scenes/GameOver.unity
-  - Assets/Scenes/Win.unity
-  playerPath: D:/OctaOut!.exe
+  - Assets/Scenes/Level_One.unity
+  - Assets/Scenes/Level_Two.unity
+  - Assets/Scenes/Lose_One.unity
+  - Assets/Scenes/Lose_Two.unity
+  - Assets/Scenes/Win_One.unity
+  - Assets/Scenes/Win_Two.unity
+  playerPath: D:/Documents/GitHub/OctaOut/OctaOut!.exe

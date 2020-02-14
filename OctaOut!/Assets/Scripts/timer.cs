@@ -18,7 +18,7 @@ public class timer : MonoBehaviour
 
     public void ResetTimer()
     {
-        levelTime = 150f;
+        levelTime = 0.00f;
     }
 
     // Update is called once per frame
@@ -26,13 +26,11 @@ public class timer : MonoBehaviour
     {
         if (levelTime >= 0.0)
         {
-            levelTime -= Time.deltaTime;
-            timerText.text = "Time Left:  " + Mathf.Round(levelTime);
-        }
-        else
-        {
+            levelTime += Time.deltaTime;
+            int min = Mathf.FloorToInt(levelTime / 60);
+            int sec = Mathf.FloorToInt(levelTime % 60);
+            timerText.text = min.ToString("00") + ":" + sec.ToString("00");
 
-            SceneManager.LoadScene("GameOver");
         }
     }
 }

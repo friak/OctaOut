@@ -66,7 +66,7 @@ public class right_hand : MonoBehaviour
 
 
             //RIGHT HAND
-            if (r1val <= 356 || Input.GetKey(KeyCode.J))
+            if (r1val <= 358 || Input.GetKey(KeyCode.J))
             {
                 Debug.Log("bend" + posr1);
 
@@ -87,7 +87,7 @@ public class right_hand : MonoBehaviour
             }
 
 
-            if (r2val <= 356 || Input.GetKey(KeyCode.K))
+            if (r2val <= 358 || Input.GetKey(KeyCode.K))
             {
                 Debug.Log("bend" + posr2);
 
@@ -127,7 +127,7 @@ public class right_hand : MonoBehaviour
                 r3.transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
 
-            if (r4val <= 357 || Input.GetKey(KeyCode.Semicolon))
+            if (r4val <= 358 || Input.GetKey(KeyCode.Semicolon))
             {
                 Debug.Log("bend" + posr4);
 

@@ -18,6 +18,8 @@ public class player_script : MonoBehaviour
     public float radius = 1f;
 
     public string frameState = "in water";
+    public GameObject timer;
+    public static bool disabled =  false;
 
     public GameObject tako;
     private BoxCollider2D boxCollider;
@@ -33,6 +35,7 @@ public class player_script : MonoBehaviour
 
     private void Start()
     {
+        timer.SetActive(false);
         camHeight = Camera.main.orthographicSize;
         camWidth = camHeight * Camera.main.aspect;
 
@@ -64,6 +67,7 @@ public class player_script : MonoBehaviour
         if (frameState == "out water")
         {
             tako.GetComponent<Rigidbody2D>().gravityScale = 2.5f;
+            startTimer();
         }
 
     }
@@ -141,6 +145,11 @@ public class player_script : MonoBehaviour
             spriteRenderer.sprite = tako_head;
         }
 
+    }
+
+    public void startTimer()
+    {
+        timer.SetActive(true);
     }
 }
 

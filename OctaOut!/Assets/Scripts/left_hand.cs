@@ -67,7 +67,7 @@ public class left_hand : MonoBehaviour
 
 
             //LEFT HAND
-            if (l1val <= 357 || Input.GetKey(KeyCode.F))
+            if (l1val <= 358 || Input.GetKey(KeyCode.F))
             {
                 Debug.Log("bendl1" + posl1);
 
@@ -128,7 +128,7 @@ public class left_hand : MonoBehaviour
                 l3.transform.localRotation = Quaternion.Euler(0, 0, 0);
             }
 
-            if (l4val <= 357 || Input.GetKey(KeyCode.A))
+            if (l4val <= 356 || Input.GetKey(KeyCode.A))
             {
                 Debug.Log("bendl4" + posl4);
 
